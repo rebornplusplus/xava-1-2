@@ -8,4 +8,9 @@ abstract class Shape implements Area, Volume, Utility {
     Shape(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return "This shouldn't happen!";
+    }
 }
