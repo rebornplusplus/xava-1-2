@@ -50,6 +50,7 @@ public class Main {
                 continue;
             }
 
+            Shape ob;
             if(choice == 1) {
                 double r;
                 try {
@@ -60,8 +61,8 @@ public class Main {
                     continue;
                 }
 
-                Circle c = new Circle(r);
-                System.out.println(c);
+                ob = new Circle(r);
+                System.out.println(ob);
             }
             else if(choice == 2) {
                 double r, h;
@@ -75,8 +76,8 @@ public class Main {
                     continue;
                 }
 
-                Cylinder c = new Cylinder(r, h);
-                System.out.println(c);
+                ob = new Cylinder(r, h);
+                System.out.println(ob);
             }
             else if(choice == 3) {
                 double r;
@@ -88,8 +89,8 @@ public class Main {
                     continue;
                 }
 
-                Sphere s = new Sphere(r);
-                System.out.println(s);
+                ob = new Sphere(r);
+                System.out.println(ob);
             }
             else if(choice == 4) {
                 double a;
@@ -101,8 +102,8 @@ public class Main {
                     continue;
                 }
 
-                Square s = new Square(a);
-                System.out.println(s);
+                ob = new Square(a);
+                System.out.println(ob);
             }
             else {
                 double a;
@@ -114,8 +115,8 @@ public class Main {
                     continue;
                 }
 
-                Cube c = new Cube(a);
-                System.out.println(c);
+                ob = new Cube(a);
+                System.out.println(ob);
             }
         }
     }
